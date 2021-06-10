@@ -30,7 +30,7 @@ public class clsConecta {
                 System.out.println("Error cargando el Driver");
             }
             
-            con = DriverManager.getConnection("jdbc:postgresql://127.0.0.1:5432/base", "postgres", "admin");
+            con = DriverManager.getConnection("jdbc:postgresql://192.168.1.80:5432/base", "postgres", "admin");
         } catch (SQLException ex) {
             System.out.println("No se pudo conectar con el Motor");
         }

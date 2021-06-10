@@ -241,6 +241,7 @@ public class frmPersona extends javax.swing.JFrame {
         obj.setId(txtId.getText());
         obj.setNombre(txtNombre.getText());
         
+        
         if(obj.modificar() == false){
             listar();
             JOptionPane.showMessageDialog(rootPane, "Se modificó");

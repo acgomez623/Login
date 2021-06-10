@@ -30,6 +30,7 @@ public class frmMenu extends javax.swing.JFrame {
 
         btnCerrar = new javax.swing.JButton();
         btnPersona = new javax.swing.JButton();
+        btnComida = new javax.swing.JButton();
         menu = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         opcPersona = new javax.swing.JMenuItem();
@@ -48,6 +49,13 @@ public class frmMenu extends javax.swing.JFrame {
         btnPersona.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnPersonaActionPerformed(evt);
+            }
+        });
+
+        btnComida.setText("Comida");
+        btnComida.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComidaActionPerformed(evt);
             }
         });
 
@@ -73,11 +81,13 @@ public class frmMenu extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(56, 56, 56)
+                .addGap(28, 28, 28)
                 .addComponent(btnPersona)
-                .addGap(41, 41, 41)
+                .addGap(28, 28, 28)
+                .addComponent(btnComida)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
                 .addComponent(btnCerrar)
-                .addContainerGap(92, Short.MAX_VALUE))
+                .addGap(33, 33, 33))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -85,7 +95,8 @@ public class frmMenu extends javax.swing.JFrame {
                 .addGap(97, 97, 97)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnCerrar)
-                    .addComponent(btnPersona))
+                    .addComponent(btnPersona)
+                    .addComponent(btnComida))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -119,6 +130,15 @@ public class frmMenu extends javax.swing.JFrame {
             }
         });
     }//GEN-LAST:event_btnPersonaActionPerformed
+
+    private void btnComidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComidaActionPerformed
+        // TODO add your handling code here:
+         java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new frmComida().setVisible(true);
+            }
+        });
+    }//GEN-LAST:event_btnComidaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -157,6 +177,7 @@ public class frmMenu extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCerrar;
+    private javax.swing.JButton btnComida;
     private javax.swing.JButton btnPersona;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
